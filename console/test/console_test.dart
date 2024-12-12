@@ -1,6 +1,6 @@
 import 'package:console/console.dart';
 import 'package:test/test.dart';
-import 'package:console/day_4_part_1.dart';
+import 'package:console/day_4_part_2.dart';
 void main() {
   test('calculate', () {
     expect(calculate("mul(6,7)don't()%mul(2,2)dfdo()mul(2,3)"), 42 + 6);
@@ -8,11 +8,11 @@ void main() {
 
   test('grid', () {
     List<List<String>> grid = [
-      ['S', 'M', 'A', 'S'],
-      ['X', 'A', 'M', 'A'],
-      ['X', 'A', 'M', 'M'],
-      ['S', 'A', 'M', 'X'],
+      ['S', 'M', 'S'],
+      ['X', 'A', 'M'],
+      ['M', 'A', 'M'],
+      ['X', 'X', 'X']
     ];
-    expect(wordSearch(grid, 'XMAS'), 3);
+    expect(wordSearch(grid), 1);
   });
 }
